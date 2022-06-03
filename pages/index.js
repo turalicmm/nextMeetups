@@ -16,16 +16,6 @@ const Welcome = (props) => {
   );
 };
 
-// export async function getServerSideProps(context) {
-//   const req = context.req;
-//   const res = context.res;
-//   return {
-//     props: {
-//       meetups: DUMMY_MEETUPS,
-//     },
-//   };
-// }
-
 export async function getStaticProps() {
   //fetch data
   const client = await MongoClient.connect("no creds for you");
